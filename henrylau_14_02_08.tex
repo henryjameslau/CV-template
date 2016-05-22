@@ -1,0 +1,96 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+%prevents hyphenation
+\usepackage[none]{hyphenat}
+
+
+% moderncv themes
+\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% multicolumn possible with this package
+\usepackage{multirow}
+
+% symbols like \Telefon, \Mobilefone, \Letter and \Email
+\RequirePackage{marvosym}
+
+
+% adjust the page margins
+\usepackage[scale=0.8,ignoreheadfoot]{geometry}
+\setlength{\hintscolumnwidth}{0.275\textwidth}            % if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+\addtolength{\textheight}{25mm}
+\addtolength{\voffset}{-6mm}
+
+
+% personal data
+\firstname{First}
+\familyname{Last}
+\address{Address 1, Address 2, Address 3, \mbox{POST CODE, UK}}{\Telefon$\,$ +44 (0)7123123456}    % optional, remove the line if not wanted
+\email{email@email.com}                      % optional, remove the line if not wanted
+
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\maketitle
+
+
+
+\section{Employment}
+\begin{tabular}{p{0.3\textwidth}p{0.70\textwidth}}
+\textbf{Job Title}\newline Place of work\newline \textit{Date-Date}&Talk about what you do here.\\
+\\
+\textbf{Job Title}\newline Really long place\newline of work \newline \textit{Date-Date}&Make yourself really interesting\\
+\\
+\textbf{Job title}\newline Place of work\newline \textit{Date from - Date to}&What you did \\
+
+
+
+
+\end{tabular}
+
+\section{Education}
+\begin{tabular}{p{0.3\textwidth}p{0.70\textwidth}}
+\textbf{College}& \textbf{Course title} (grade)\\
+\textit{year-year}&$\bullet$ Modules: A, B, C, D. \\ 
+&$\bullet$ Practical experiences: X, Y, Z.\\ 
+&$\bullet$ Dissertation topic: making a CV template.\\
+\\
+\textbf{University}\newline \textit{Date-Date}& \textbf{Degree title} (grade)\\
+&$\bullet$ Example bullet points\\
+&$\bullet$ Example bullet points\\
+&$\bullet$ Example bullet points\\
+\end{tabular}
+%------------------------------------------
+\newpage
+%------------------------------------------
+\section{Work Experience}
+\begin{tabular}{p{0.3\textwidth}p{0.70\textwidth}}
+\textbf{Job title}\newline Place of work\newline \textit{Dates}&A few sentences describing what you did.\\
+\\
+\textbf{Job title}\newline Place of work\newline \textit{Dates}&A few sentences describing what you did.\\
+\\
+\textbf{Job title}\newline Place of work\newline \textit{Dates}&A few sentences describing what you did.\\
+\\
+\end{tabular}
+
+\section{Skills}
+\begin{tabular}{p{0.30\textwidth}p{0.70\textwidth}}
+Skill category &$\bullet$List what skills you have\\
+
+Skill category &$\bullet$List what skills you have\\
+
+Skill category &$\bullet$List what skills you have\\
+\end{tabular}
+\end{document}
